@@ -1,0 +1,148 @@
+import type { StyleProps, StandardStyleProps, StyleFunction } from './types'
+
+export const stylePropFunctions: {
+	[key in keyof StyleProps]: key extends keyof StandardStyleProps
+		? true
+		: StyleFunction
+} = {
+	gridGap: true,
+	gridColumnGap: true,
+	gridRowGap: true,
+	gridColumn: true,
+	gridRow: true,
+	gridAutoFlow: true,
+	gridAutoColumns: true,
+	gitAutoRows: true,
+	gridTemplate: true,
+	gridTemplateColumns: true,
+	gridTemplateRows: true,
+	gridTemplateAreas: true,
+	gridArea: true,
+
+	fill: true,
+	stroke: true,
+	strokeWidth: true,
+
+	cursor: true,
+	willChange: true,
+
+	zIndex: true,
+	transform: true,
+	transition: true,
+
+	position: true,
+	top: true,
+	right: true,
+	bottom: true,
+	left: true,
+	verticalAlign: true,
+
+	display: true,
+
+	overflow: true,
+	overflowX: true,
+	overflowY: true,
+
+	width: true,
+	height: true,
+	minWidth: true,
+	minHeight: true,
+	maxWidth: true,
+	maxHeight: true,
+
+	flex: true,
+	flexWrap: true,
+	flexDirection: true,
+	flexGrow: true,
+	flexShrink: true,
+	flexBasis: true,
+	alignItems: true,
+	alignContent: true,
+	alignSelf: true,
+	justifyItems: true,
+	justifyContent: true,
+	justifySelf: true,
+	order: true,
+
+	margin: true,
+	marginTop: true,
+	marginRight: true,
+	marginBottom: true,
+	marginLeft: true,
+
+	padding: true,
+	paddingTop: true,
+	paddingRight: true,
+	paddingBottom: true,
+	paddingLeft: true,
+
+	border: true,
+	borderTop: true,
+	borderRight: true,
+	borderBottom: true,
+	borderLeft: true,
+	borderWidth: true,
+	borderTopWidth: true,
+	borderRightWidth: true,
+	borderBottomWidth: true,
+	borderLeftWidth: true,
+	borderStyle: true,
+	borderTopStyle: true,
+	borderRightStyle: true,
+	borderBottomStyle: true,
+	borderLeftStyle: true,
+	borderColor: true,
+	borderTopColor: true,
+	borderRightColor: true,
+	borderBottomColor: true,
+	borderLeftColor: true,
+	borderRadius: true,
+	borderTopLeftRadius: true,
+	borderTopRightRadius: true,
+	borderBottomLeftRadius: true,
+	borderBottomRightRadius: true,
+
+	background: true,
+	backgroundColor: true,
+	backgroundImage: true,
+	backgroundSize: true,
+	backgroundPosition: true,
+	backgroundRepeat: true,
+	opacity: true,
+
+	boxShadow: true,
+	textShadow: true,
+
+	fontFamily: true,
+	fontSize: true,
+	fontWeight: true,
+	fontStyle: true,
+	lineHeight: true,
+	letterSpacing: true,
+	textAlign: true,
+	textDecoration: true,
+	textTransform: true,
+
+	m: (v) => ({ margin: v }),
+	mt: (v) => ({ marginTop: v }),
+	mb: (v) => ({ marginBottom: v }),
+	ml: (v) => ({ marginLeft: v }),
+	mr: (v) => ({ marginRight: v }),
+	mx: (v) => ({ marginLeft: v, marginRight: v }),
+	my: (v) => ({ marginTop: v, marginBottom: v }),
+	p: (v) => ({ padding: v }),
+	pt: (v) => ({ paddingTop: v }),
+	pb: (v) => ({ paddingBottom: v }),
+	pl: (v) => ({ paddingLeft: v }),
+	pr: (v) => ({ paddingRight: v }),
+	px: (v) => ({ paddingLeft: v, paddingRight: v }),
+	py: (v) => ({ paddingTop: v, paddingBottom: v }),
+	borderX: (v) => ({ borderLeft: v, borderRight: v }),
+	borderY: (v) => ({ borderTop: v, borderBottom: v }),
+	bg: (v) => ({ backgroundColor: v }),
+}
+
+stylePropFunctions.marginX = stylePropFunctions.mx
+stylePropFunctions.marginY = stylePropFunctions.my
+stylePropFunctions.paddingX = stylePropFunctions.px
+stylePropFunctions.paddingY = stylePropFunctions.py

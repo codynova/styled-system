@@ -1,0 +1,16 @@
+{
+  "styled-system.esm.js": {
+    "bundled": 5124,
+    "minified": 3265,
+    "gzipped": 1032,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 3063
+      }
+    }
+  }
+}

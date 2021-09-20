@@ -1,0 +1,41 @@
+{
+	"name": "@novas/styled-system",
+	"version": "0.0.1",
+	"description": "Smaller faster rewrite of styled-system",
+	"module": "dist/styled-system.esm.js",
+	"repository": "https://github.com/codynova/styled-system",
+	"author": "Cody Persinger <codypersinger@gmail.com> (https://github.com/codynova)",
+	"license": "MIT",
+	"sideEffects": false,
+	"scripts": {
+		"prepare": "husky install",
+		"build": "npm run lint && npm run prettier && rimraf dist && rollup -c",
+		"lint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+		"prettier": "prettier --write .",
+		"pretty-quick": "pretty-quick --staged"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/eslint-parser": "7.15.7",
+		"@babel/eslint-plugin": "7.14.5",
+		"@novas/eslint-config": "latest",
+		"@novas/prettier-config": "latest",
+		"@rollup/plugin-typescript": "8.2.5",
+		"@typescript-eslint/eslint-plugin": "4.31.1",
+		"@typescript-eslint/parser": "4.31.1",
+		"csstype": "3.0.9",
+		"eslint": "7.32.0",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-plugin-react": "7.25.2",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"husky": "7.0.2",
+		"prettier": "2.4.1",
+		"pretty-quick": "3.1.1",
+		"rimraf": "3.0.2",
+		"rollup": "2.56.3",
+		"rollup-plugin-size-snapshot": "0.12.0",
+		"rollup-plugin-terser": "7.0.2",
+		"typescript": "4.4.3"
+	},
+	"peerDependencies": {}
+}
