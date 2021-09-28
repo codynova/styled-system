@@ -1,5 +1,7 @@
 # @novas/styled-system
 
+Smaller faster rewrite of styled-system
+
 ## Installation
 
 ```bash
