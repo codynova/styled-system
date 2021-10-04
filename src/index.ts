@@ -1,6 +1,6 @@
 import { mediaQueries } from './defaults'
 import { stylePropFunctions } from './propFns'
-import type { StyleProps, StyleFunction } from './types'
+import type { StyleProps } from './types'
 
 export const merge = (a: any, b: any) => {
 	const result = Object.assign({}, a, b)
@@ -58,6 +58,4 @@ const createStyleParser = () => {
 	}
 }
 
-const styleFunction = createStyleParser()
-
-export default styleFunction
+export const styleFunction = createStyleParser()

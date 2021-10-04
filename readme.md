@@ -10,7 +10,7 @@ yarn add @novas/styled-system
 
 ```jsx
 import styled from 'styled-components'
-import styleFunction from '@novas/styled-system'
+import { styleFunction } from '@novas/styled-system'
 
 const Box = styled.div`
 	box-sizing: border-box;

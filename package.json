@@ -1,6 +1,6 @@
 {
 	"name": "@novas/styled-system",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Smaller faster rewrite of styled-system",
 	"module": "dist/styled-system.esm.js",
 	"repository": "https://github.com/codynova/styled-system",

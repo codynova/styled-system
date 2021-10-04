@@ -1,8 +1,8 @@
 {
   "styled-system.esm.js": {
-    "bundled": 5124,
-    "minified": 3265,
-    "gzipped": 1032,
+    "bundled": 5113,
+    "minified": 3254,
+    "gzipped": 1024,
     "treeshaked": {
       "rollup": {
         "code": 0,
